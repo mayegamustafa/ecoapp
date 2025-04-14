@@ -1,0 +1,143 @@
+name: e_com
+description: A new Flutter project.
+
+publish_to: "none"
+
+version: 2.0.1+15
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # ui
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  carousel_slider: ^5.0.0
+  shimmer_animation: ^2.2.1
+  toggle_switch: ^2.3.0
+  flutter_staggered_grid_view: ^0.7.0
+  timeline_tile: ^2.0.0
+  smooth_page_indicator: ^1.2.0
+  flutter_animate: ^4.5.0
+  flutter_rating_bar: ^4.0.1
+  material_design_icons_flutter: ^7.0.7296
+  flutter_html: ^3.0.0-beta.2
+  pull_to_refresh: ^2.0.0
+  lottie: ^3.1.3
+  badges: ^3.1.2
+  flex_color_scheme: ^7.3.1
+  rive: ^0.13.14
+  auto_animated_list: ^2.0.0
+  animated_onboard:
+    path: package/animated_onboard
+  hold_on_pop: ^0.0.5
+  flutter_form_builder: ^9.5.0
+  form_builder_validators: ^11.0.0
+  extended_image: ^8.3.1
+  pinput: ^5.0.0
+  cached_network_image: ^3.4.1
+  gap: ^3.0.1
+  google_maps_flutter: ^2.9.0
+  grouped_list: ^6.0.0
+  #state and management
+  flutter_hooks: ^0.20.5
+  hooks_riverpod: ^2.5.4
+  go_router: ^14.3.0
+  get_it: ^8.0.0
+  #util
+  equatable: ^2.0.5
+  intl: ^0.19.0
+  fpdart: ^1.1.0
+  dio: ^5.7.0
+  google_sign_in: ^6.2.1
+  flutter_facebook_auth: ^7.1.1
+  collection: ^1.18.0
+  flutter_inappwebview: ^6.1.5
+  url_launcher: ^6.3.1
+  internet_connection_checker: ^1.0.0
+  share_plus: ^10.0.3
+  image_picker: ^1.1.2
+  toastification: ^2.3.0
+  location: ^7.0.1
+  geocoding: ^3.0.0
+  timeago: ^3.7.0
+  firebase_messaging: ^15.1.3
+  firebase_core: ^3.6.0
+  flutter_local_notifications: ^17.2.3
+  #data
+  shared_preferences: ^2.3.2
+  open_filex: ^4.5.0
+  file_picker: ^8.1.2
+  path_provider: ^2.1.4
+  crypto: ^3.0.5
+  pointycastle: ^3.9.1
+  encrypt: ^5.0.3
+  package_info_plus: ^8.0.3
+  #log
+  pretty_dio_logger: ^1.4.0
+  talker_flutter: ^4.4.1
+  #payment
+  payment_module:
+    path: package/payment_module
+  esewa_flutter_sdk:
+    path: package/esewa_flutter_sdk
+  background_downloader: ^8.5.6
+  flutter_parsed_text: ^2.2.1
+  buttons_tabbar: ^1.3.13
+  flutter_svg: ^2.0.10
+  intl_utils: ^2.8.7
+  vector_graphics: 1.1.11
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  custom_lint: ^0.6.5
+  riverpod_lint: ^2.3.13
+  build_runner: ^2.4.13
+  flutter_gen_runner: ^5.8.0
+  flutter_launcher_icons: ^0.14.1
+
+dependency_overrides:
+  webview_flutter_android: 3.16.1
+  web: ^1.0.0
+  open_filex:
+    git:
+      url: https://github.com/javaherisaber/open_filex.git
+      ref: 3ed351
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/illustration/
+    - assets/logo/
+    - assets/icon/
+    - assets/lottie/
+    - assets/rive/
+    - assets/svg/
+
+# TO Generate : flutter packages pub run build_runner build
+flutter_gen:
+  output: lib/_core/strings/
+  line_length: 80
+  integrations:
+    flutter_svg: true
+    lottie: true
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/app_logo.png"
+
+flutter_intl:
+  enabled: true
+  class_name: TR
+  main_locale: en
+  arb_dir: lib/_core/l10n/lang
+  output_dir: lib/_core/l10n/gen_
