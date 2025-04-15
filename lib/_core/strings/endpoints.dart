@@ -4,7 +4,7 @@ class Endpoints {
   static String? betaBaseUrl;
 
   // base url
-  static const String baseUrl = "https://cartuser.kodepixel.com/api";
+  static const String baseUrl = "https://teal-panther-244063.hostingersite.com/api";
 
   static final String baseApiUrl = betaBaseUrl ?? baseUrl;
 
