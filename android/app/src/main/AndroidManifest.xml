@@ -38,7 +38,7 @@
 
 
     <application
-        android:label="Cart User"
+        android:label="Total Health"
         android:name="${applicationName}"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         android:icon="@mipmap/launcher_icon"
